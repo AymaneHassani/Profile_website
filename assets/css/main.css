@@ -1082,7 +1082,7 @@ input, select, textarea {
 		
 /* Hamburger Menu Styles */
 #menu {
-    display: none;
+    display: none; /* Hidden by default */
     position: fixed;
     top: 0;
     left: 0;
@@ -1131,7 +1131,7 @@ input, select, textarea {
 }
 
 .open #menu {
-    display: block;
+    display: block; /* Display the menu when open class is added */
 }
 
 .open .menuToggle div:nth-child(1) {
@@ -1149,4 +1149,3 @@ input, select, textarea {
     position: relative;
     top: -8px;
 }
-

@@ -62,7 +62,22 @@
         </div>
     </div>
 
-    <!-- Scripts -->
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Select the hamburger button and menu elements
+            var menuToggle = document.querySelector('.menuToggle');
+            var menu = document.querySelector('#menu');
+            
+            // Add a click event listener to the hamburger button
+            menuToggle.addEventListener('click', function() {
+                // Toggle the 'open' class on the menu
+                menu.classList.toggle('open');
+            });
+        });
+    </script>
+
+    <!-- Other Scripts -->
     <script>
         window.onload = function() {
             document.body.classList.remove('is-preload');
@@ -86,17 +101,5 @@
         };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
-
-    <!-- Hamburger Menu Script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var menuToggle = document.querySelector('.menuToggle');
-            var menu = document.querySelector('#menu');
-            
-            menuToggle.addEventListener('click', function() {
-                menu.classList.toggle('open');
-            });
-        });
-    </script>
 </body>
 </html>
