@@ -1,9 +1,5 @@
-// JavaScript for Hamburger Menu
-document.addEventListener('DOMContentLoaded', function() {
-    var menuToggle = document.querySelector('.menuToggle');
-    var menu = document.querySelector('#menu');
-    
-    menuToggle.addEventListener('click', function() {
-        menu.classList.toggle('open');
-    });
-});
+function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+}

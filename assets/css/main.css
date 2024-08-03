@@ -1082,70 +1082,95 @@ input, select, textarea {
 		
 /* Hamburger Menu Styles */
 #menu {
-    display: none; /* Hidden by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    z-index: 1000;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
+	z-index: 2;
+  }
+  
+  #menu-bar {
+	width: 45px;
+	height: 40px;
+	margin: 30px 0 20px 20px;
+	cursor: pointer;
+  }
+  
+  .bar {
+	height: 5px;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+  }
+  
+  #bar1 {
+	transform: translateY(-4px);
+  }
+  
+  #bar3 {
+	transform: translateY(4px);
+  }
+  
+  .nav {
+	transition: 0.3s ease;
+	display: none;
+  }
+  
+  .nav ul {
+	padding: 0 22px;
+  }
+  
+  .nav li {
+	list-style: none;
+	padding: 12px 0;
+  }
+  
+  .nav li a {
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+  }
+  
+  .nav li a:hover {
+	font-weight: bold;
+  }
+  
+  .menu-bg, #menu {
+	top: 0;
+	left: 0;
+	position: absolute;
+  }
+  
+.menu-bg {
+	z-index: 1;
+	width: 0;
+	height: 0;
+	margin: 30px 0 20px 20px;
+	background: rgba(128, 128, 128, 0.5); /* Grey with 50% transparency */
+	border-radius: 50%;
+	transition: 0.3s ease;
 }
-
-#menu nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#menu nav ul li {
-    margin: 20px 0;
-}
-
-#menu nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.menuToggle {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 30px;
-    height: 30px;
-    z-index: 1100;
-    cursor: pointer;
-}
-
-.menuToggle div {
-    width: 30px;
-    height: 3px;
-    background: #fff;
-    margin: 6px 0;
-    transition: all 0.3s;
-}
-
-.open #menu {
-    display: block; /* Display the menu when open class is added */
-}
-
-.open .menuToggle div:nth-child(1) {
-    transform: rotate(45deg);
-    position: relative;
-    top: 8px;
-}
-
-.open .menuToggle div:nth-child(2) {
-    opacity: 0;
-}
-
-.open .menuToggle div:nth-child(3) {
-    transform: rotate(-45deg);
-    position: relative;
-    top: -8px;
-}
+  
+  .change {
+	display: block;
+  }
+  
+  .change .bar {
+	background-color: white;
+  }
+  
+  .change #bar1 {
+	transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+	opacity: 0;
+  }
+  
+  .change #bar3 {
+	transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+	width: 520px;
+	height: 460px;
+	transform: translate(-60%,-30%);
+  }
