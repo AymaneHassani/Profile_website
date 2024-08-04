@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: #ffffff;
 		overflow: hidden;
 	}
 
@@ -99,7 +99,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #fff;
+		color: #ffffff;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 15pt;
 		font-weight: 300 !important;
@@ -154,7 +154,7 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
-/* Wrapper */
+Wrapper
 
 	@-moz-keyframes wrapper {
 		0% {
@@ -197,7 +197,7 @@ input, select, textarea {
 	}
 
 	#wrapper {
-		-moz-animation: wrapper 3s forwards;
+		-moz-animation: wrapper 3s forwards;rgba(128, 128, 128, 0.5)
 		-webkit-animation: wrapper 3s forwards;
 		-ms-animation: wrapper 3s forwards;
 		animation: wrapper 3s forwards;
@@ -209,7 +209,7 @@ input, select, textarea {
 		width: 100%;
 	}
 
-/* BG
+/* BG */
 
 	#bg {
 		-moz-animation: bg 60s linear infinite;
@@ -226,7 +226,7 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #348cb2 url("images/bg.jpg") bottom left;
+		background: #348cb2 url("images/pexels-felixmittermeier-956999.jpg") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -302,56 +302,9 @@ input, select, textarea {
 	#bg {
 		background-size: 2250px auto;
 		width: 6750px;
-	} */
-/* styles.css */
-
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden; /* Prevents scrollbars from appearing */
-}
-
-.video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1; /* Places the video behind other content */
-}
-
-.video-background video {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: slide 10s linear infinite; /* Adjust duration as needed */
-}
-
-/* @keyframes slide {
-    0% {
-        transform: translate(-50%, -50%) translateX(0);
-    }
-    100% {
-        transform: translate(-50%, -50%) translateX(-100%);
-    }
-} */
-
-.content {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    color: white;
-    padding: 20px;
-}
-
-/* Overlay */
+	}
+	
+/* Overlay
 
 	@-moz-keyframes overlay {
 		0% {
@@ -409,7 +362,7 @@ body, html {
 		position: fixed;
 		top: 0;
 		width: 100%;
-	}
+	} */
 
 /* Main */
 
@@ -1221,3 +1174,10 @@ body, html {
 	height: 460px;
 	transform: translate(-60%,-30%);
   }
+
+  .text-background {
+    background-color: rgba(196, 196, 196, 0.77); /* Change this to your desired color */
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+	display: inline;
+}
